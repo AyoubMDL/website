@@ -1,0 +1,1 @@
+//background: url(../images/1.jpeg) no-repeat;
