@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BIH Ayoub Website</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/skins/colors.css">
+    <link rel="stylesheet" href="styles/skins/color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="styles/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="styles/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="styles/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="styles/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+
+    
+    <link rel="stylesheet" href="styles/styleSwitcher.css">
 </head>
 <body>
     <div class="main-container">
@@ -19,24 +28,24 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
                 
             </ul>
         </div>
 
         <div class="main-content">
-            <section class="home section hidden">
+            <section class="home active section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
                             <h3 class="hello">Hello, my name is <span class="name">BiH Ayoub</span></h3>
                             <h3 class="my-profession">I am a <span class="typing">computer vision engineer</span></h3>
                             <p>I am a computer vision engineer with an extensive experience</p>
-                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                            <a href="./info/cv_BIH_Ayoub.pdf" class="btn" download="Cv.pdf" target="_blank">Download CV</a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="images/hero.jpg" alt="">
@@ -45,7 +54,7 @@
                 </div>
             </section>
 
-            <section class="about section hidden">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -93,8 +102,7 @@
 
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="#" class="btn">Download CV</a>
-                                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -147,8 +155,9 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> 2020 - 2023
                                                     </h3>
-                                                    <h4 class="timeline-title">Engineering cycle in computer science</h4>
-                                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa, eius quos, dolores iusto iure perferendis aliquam aliquid eveniet inventore rem accusamus doloribus tenetur assumenda magni?</p>
+                                                    <h4 class="timeline-title">Ensicaen, public engineering school</h4>
+                                                    <p class="timeline-text">Engineer student in computer science, major artificial
+                                                        intelligence, image and sound </p>
                                                     
                                                 </div>
 
@@ -156,20 +165,32 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2020 - 2023
+                                                        <i class="fa fa-calendar"></i> 2019 - 2020
                                                     </h3>
-                                                    <h4 class="timeline-title">Engineering cycle in computer science</h4>
-                                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa, eius quos, dolores iusto iure perferendis aliquam aliquid eveniet inventore rem accusamus doloribus tenetur assumenda magni?</p>
+                                                    <h4 class="timeline-title">Ensiame, public engineering school</h4>
+                                                    <p class="timeline-text">Industrial engineering
+                                                    </p>
                                                     
                                                 </div>
 
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2020 - 2023
+                                                        <i class="fa fa-calendar"></i> 2017 - 2019
                                                     </h3>
-                                                    <h4 class="timeline-title">Engineering cycle in computer science</h4>
-                                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa, eius quos, dolores iusto iure perferendis aliquam aliquid eveniet inventore rem accusamus doloribus tenetur assumenda magni?</p>
+                                                    <h4 class="timeline-title">The high school Mohamed 5, Maroc</h4>
+                                                    <p class="timeline-text">Preparatory classes, mathematics and physics</p>
+                                                    
+                                                </div>
+
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2017
+                                                    </h3>
+                                                    <h4 class="timeline-title">The high school El khawarizmi, Maroc</h4>
+                                                    <p class="timeline-text">Baccalaureate in Mathematical Sciences
+                                                        First class honours</p>
                                                     
                                                 </div>
 
@@ -179,17 +200,17 @@
                                     </div>
                                 </div>
                                 <div class="experience padd-15">
-                                    <h3 class="title">Experience</h3>
+                                    <h3 class="title">Experiences</h3>
                                     <div class="row">
                                         <div class="timeline-box padd-15">
                                             <div class="timeline shadow-dark">
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2020 - 2023
+                                                        <i class="fa fa-calendar"></i> 2021 - 2022
                                                     </h3>
-                                                    <h4 class="timeline-title">Engineering cycle in computer science</h4>
-                                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa, eius quos, dolores iusto iure perferendis aliquam aliquid eveniet inventore rem accusamus doloribus tenetur assumenda magni?</p>
+                                                    <h4 class="timeline-title">Second year internship | Kingston University, Faculty of Science, Engineering and Computing</h4>
+                                                    <p class="timeline-text">Subject : Deep Learning-based Unseen Object Recognition</p>
                                                     
                                                 </div>
 
@@ -197,23 +218,22 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2020 - 2023
+                                                        <i class="fa fa-calendar"></i> Present
                                                     </h3>
-                                                    <h4 class="timeline-title">Engineering cycle in computer science</h4>
-                                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa, eius quos, dolores iusto iure perferendis aliquam aliquid eveniet inventore rem accusamus doloribus tenetur assumenda magni?</p>
+                                                    <h4 class="timeline-title">Freelance in Upwork, Fiverr, Superprof</h4>
+                                                    <p class="timeline-text">Freelancing in computer science : Python, Java/JavaFx, C++/Qt</p>
                                                     
                                                 </div>
 
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2020 - 2023
+                                                        <i class="fa fa-calendar"></i> Present
                                                     </h3>
-                                                    <h4 class="timeline-title">Engineering cycle in computer science</h4>
-                                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa, eius quos, dolores iusto iure perferendis aliquam aliquid eveniet inventore rem accusamus doloribus tenetur assumenda magni?</p>
+                                                    <h4 class="timeline-title">Waiter, Caen</h4>
+                                                    <p class="timeline-text">Working as a waiter in a restaurent (Order management, Collections)</p>
                                                     
                                                 </div>
-
                                                
                                             </div>
                                         </div>
@@ -225,7 +245,7 @@
                 </div>
             </section>
 
-            <section class="service section hidden">
+            <section class="service section" id="services">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -279,7 +299,7 @@
                 </div>
             </section>
 
-            <section class="portfolio section hidden">
+            <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -343,7 +363,7 @@
                 </div>
             </section>
 
-            <section class="contact section">
+            <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -421,10 +441,27 @@
 
 
         </div>
-
-
-
     </div>
+
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/styleSwitcher.js"></script>
 </body>
 </html>
