@@ -86,4 +86,11 @@ function asideSectionTogglerBtn() {
     }
 }
 
+function sendMessage() {
+    var message = document.getElementById("message").value;
+    var subject = document.getElementById("subject").value;
+
+    window.open('mailto:ayoubbih119@gmail.com?subject='+subject+'&body='+message);
+}
+
 

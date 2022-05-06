@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/skins/color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
     <link rel="stylesheet" href="styles/skins/color-1.css" class="alternate-style" title="color-1" disabled>
     <link rel="stylesheet" href="styles/skins/color-2.css" class="alternate-style" title="color-2" disabled>
@@ -45,13 +46,25 @@
                             <h3 class="hello">Hello, my name is <span class="name">BiH Ayoub</span></h3>
                             <h3 class="my-profession">I am a <span class="typing">computer vision engineer</span></h3>
                             <p>I am a computer vision engineer with an extensive experience</p>
-                            <a href="./info/cv_BIH_Ayoub.pdf" class="btn" download="Cv.pdf" target="_blank">Download CV</a>
+                            <a href="./info/cv_BIH_Ayoub.pdf" class="btn" download="Cv.pdf" target="_blank">Download CV <i id="download-span" class="fa fa-download" aria-hidden="true"></i></a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="images/hero.jpg" alt="">
                         </div>
                     </div>
+                    <footer class="footer">
+                        <p class="footer-title">Copyrights @ <span>BIH Ayoub</span></p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-gitlab"></i></a>
+                        </div>
+                    </footer>
                 </div>
+                
             </section>
 
             <section class="about section" id="about">
@@ -259,40 +272,50 @@
                                 <div class="icon">
                                     <i class="fa fa-brain"></i>
                                 </div>
-                                <h4>Deep learning</h4>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati explicabo delectus corrupti.</p>
+                                <h4>Machine and Deep learning</h4>
+                                <p>I can create machine and deep learning models using sklearn and TensorFlow for image recognition, predictions...</p>
                             </div>
                         </div>
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-image"></i>
+                                </div>
+                                <h4>Computer Vision and image processing</h4>
+                                <p>I can do image processing using opencv in python</p>
+                            </div>
+                        </div>
+                        
+
 
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-code"></i>
                                 </div>
-                                <h4>Machine learning</h4>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati explicabo delectus corrupti.</p>
+                                <h4>Java, C/C++ and python developer</h4>
+                                <p>I can help you in your programming tasks in java, C/C++, python langages</p>
                             </div>
                         </div>
-
-
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-search"></i>
-                                </div>
-                                <h4>Deep learning</h4>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati explicabo delectus corrupti.</p>
-                            </div>
-                        </div>
-
 
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-laptop-code"></i>
                                 </div>
-                                <h4>Deep learning</h4>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati explicabo delectus corrupti.</p>
+                                <h4>Graphical user interfaces</h4>
+                                <p>I can create GUIs in java using javafx, c++ with Qt or in python with pyqt5</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-file-code"></i>
+                                </div>
+                                <h4>Frontend/backend developer</h4>
+                                <p>I have an intermediate level in the development of websites using html/css/javascript and php</p>
                             </div>
                         </div>
                     </div>
@@ -312,10 +335,19 @@
                         </div>
                     </div>
                     <div class="row">
+
                         <div class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="images/portfolio/chat.png" alt="">
+                                </div>
+
+                                <div class="project-info">
+                                    <p class="project-category">Creating a chat using Java RMI</p>
+                                    <strong class="project-title">
+                                        <span>Java programming</span>
+                                        <a href="https://github.com/AyoubMDL/Chat-RMI/tree/main" class="more-details" target="_blank">More details</a>
+                                    </strong>
                                 </div>
                             </div>
                         </div>
@@ -323,7 +355,14 @@
                         <div class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="images/portfolio/chat.png" alt="">
+                                    <img src="images/portfolio/heart_disease.jpeg" alt="">
+                                </div>
+                                <div class="project-info">
+                                    <p class="project-category">Heart disease detection</p>
+                                    <strong class="project-title">
+                                        <span>Python machine learning</span>
+                                        <a href="https://github.com/AyoubMDL/Machine_learning_projects/tree/main/heart_disease_detection" class="more-details" target="_blank">More details</a>
+                                    </strong>
                                 </div>
                             </div>
                         </div>
@@ -331,7 +370,31 @@
                         <div class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="images/portfolio/chat.png" alt="">
+                                    <img src="images/portfolio/takuzu-gui.png" alt="">
+                                </div>
+                                <div class="project-info">
+                                    <p class="project-category">Takuzu game with Qt/C++</p>
+                                    <strong class="project-title">
+                                        <span>Graphical user interface</span>
+                                        <a href="https://github.com/AyoubMDL/Takuzu-game-with-Qt" class="more-details" target="_blank">More details</a>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/chatbot.png" alt="">
+                                </div>
+                                <div class="project-info">
+                                    <p class="project-category">Simple chatbot with gui</p>
+                                    <strong class="project-title">
+                                        <span>Python/pyqt5 /NLP</span>
+                                        <a href="https://github.com/AyoubMDL/Machine_learning_projects/tree/main/simple_chatbot_with_gui" class="more-details" target="_blank">More details</a>
+                                    </strong>
                                 </div>
                             </div>
                         </div>
@@ -339,23 +402,14 @@
                         <div class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <img src="images/portfolio/chat.png" alt="">
+                                    <img src="images/portfolio/face_mask_detection.png" alt="">
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/chat.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/chat.png" alt="">
+                                <div class="project-info">
+                                    <p class="project-category">Real time face mask detection</p>
+                                    <strong class="project-title">
+                                        <span>python/deep learning/OpenCV</span>
+                                        <a href="https://github.com/AyoubMDL/face_mask_recognition" class="more-details" target="_blank">More details</a>
+                                    </strong>
                                 </div>
                             </div>
                         </div>
@@ -397,45 +451,9 @@
                             <p>www.mywebsite.com</p>
                         </div>
                     </div>
-                    <h3 class="contact-title padd-15">Send Me An Email</h3>
+                    <h3 class="contact-title padd-15">Call me or Send Me An Email</h3>
                     <h4 class="contact-sub-title padd-15">I am very responsive to messages</h4>
-                    <div class="row">
-                        <div class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea name="" class="form-control" placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <button type="submit" class="btn">Send Message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </section>
 

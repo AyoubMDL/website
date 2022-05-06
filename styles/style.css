@@ -139,6 +139,10 @@ ul {
     position: relative;
 }
 
+#download-span {
+    margin-left: 10px;
+}
+
 .btn {
     font-size: 16px;
     font-weight: 500;
@@ -600,6 +604,7 @@ h3.my-profession {
 }
 
 .service .service-item .service-item-inner {
+    height: 300px;
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
@@ -610,7 +615,6 @@ h3.my-profession {
 
 .service .service-item .service-item-inner:hover {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-    cursor: pointer;
 }
 
 .service .service-item .service-item-inner .icon {
@@ -680,12 +684,54 @@ h3.my-profession {
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
-    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-item-inner:hover {
+    transform: scale(1.1);
 }
 
 .portfolio .portfolio-item-inner .portfolio-img img {
+    height: 200px;
     width: 100%;
     display: block;
+}
+
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.project-title span {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--text-black-900);
+}
+
+.more-details {
+    text-decoration: none;
+    color: var(--skin-color);
+    transition: all 0.3s ease;
+}
+
+.more-details:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 /*contact*/
@@ -733,53 +779,10 @@ h3.my-profession {
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
-    font-weight: 400;
+    font-weight: 700;
 }
 
-.contact .contact-form {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
 
-.contact .contact-form .col-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.contact .contact-form .col-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.contact .contact-form .form-item {
-    margin-bottom: 30px;
-}
-
-.contact .contact-form .form-item .form-control {
-    width: 100%;
-    height: 50px;
-    border-radius: 25px;
-    background: var(--bg-black-100);
-    border: 1px solid var(--bg-black-50);
-    padding: 10px 25px;
-    font-size: 16px;
-    color: var(--text-black-700);
-    transition: all 0.3s ease;
-}
-
-.contact .contact-form .form-item .form-control:focus {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-}
-
-.contact .contact-form .form-item textarea.form-control {
-    height: 140px;
-}
-
-.contact .contact-form .btn {
-    height: 50px;
-    padding: 0 50px;
-    cursor: pointer;
-}
 
 .home .home-img {
     display: none;
@@ -836,7 +839,6 @@ h3.my-profession {
 
 
 @media (max-width: 767px) {
-    .contact .contact-form .col-6, 
     .contact .contact-info-item,
     .portfolio .portfolio-item,
     .service .service-item,
@@ -847,4 +849,37 @@ h3.my-profession {
         flex: 0 0 100%;
         max-width: 100%;
     }
+}
+
+
+
+.footer {
+    background-color: var(--bg-black-100);
+    color: var(--text-black-900);
+    position: absolute;
+    
+    bottom:0;
+    width:90%;
+    padding: 2em;
+    height:30px; 
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: var(--skin-color);
+}
+
+.footer .social-icons a{
+    color: var(--skin-color);
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
 }
