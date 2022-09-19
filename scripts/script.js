@@ -3,7 +3,7 @@
 /*typing animation*/
 
 const typed = new Typed(".typing", {
-    strings:["", "Machine and Deep learning engineer", "Computer vision and Image processing engineer", "Graphical user interface developer"],
+    strings:["", "Machine and Deep learning engineer", "Computer vision and Image processing engineer"],
     typeSpeed:100,
     BackSpeed:60,
     loop:true
@@ -86,11 +86,5 @@ function asideSectionTogglerBtn() {
     }
 }
 
-function sendMessage() {
-    var message = document.getElementById("message").value;
-    var subject = document.getElementById("subject").value;
-
-    window.open('mailto:ayoubbih119@gmail.com?subject='+subject+'&body='+message);
-}
 
 

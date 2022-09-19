@@ -22,6 +22,8 @@ body {
     line-height: 1.5;
     font-size: 16px;
     font-family: 'Poppins' sans-serif;
+    
+
 }
 
 *{
@@ -246,10 +248,6 @@ ul {
     position: relative;
 }
 
-.aside .nav-toggler.open span {
-    background-color: transparent;
-}
-
 
 .aside .nav-toggler span::before {
     content:'';
@@ -261,10 +259,7 @@ ul {
     left: 0;
 }
 
-.aside .nav-toggler.open span::before {
-    transform: rotate(45deg);
-    top: 0;
-}
+
 
 .aside .nav-toggler span::after {
     content:'';
@@ -276,10 +271,7 @@ ul {
     left: 0;
 }
 
-.aside .nav-toggler.open span::after {
-    transform: rotate(-45deg);
-    top: 0;
-}
+
 
 
 .aside .nav {
@@ -784,9 +776,6 @@ h3.my-profession {
 
 
 
-.home .home-img {
-    display: none;
-}
 
 
 @media (max-width: 1199px) {
@@ -807,7 +796,7 @@ h3.my-profession {
     }
 
     .aside .nav-toggler.open {
-        left: 300px;
+        left: 30px;
     }
 
     .section {
@@ -820,6 +809,14 @@ h3.my-profession {
     .about .about-content .personal-info .info-item p span {
         display: block;
         margin-left: 0;
+    }
+
+    .home .home-img {
+        display: none;
+    }
+
+    .home .home-img img {
+        display: none;
     }
 
 }
