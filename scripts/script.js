@@ -3,7 +3,7 @@
 /*typing animation*/
 
 const typed = new Typed(".typing", {
-    strings:["", "Machine and Deep learning engineer", "Computer vision and Image processing engineer"],
+    strings:["", "Machine and Deep learning engineer", "Computer vision and NLP Specialist"],
     typeSpeed:100,
     BackSpeed:60,
     loop:true

@@ -854,9 +854,9 @@ h3.my-profession {
     background-color: var(--bg-black-100);
     color: var(--text-black-900);
     position: absolute;
-    
     bottom:0;
-    width:90%;
+    width: 90%;
+    max-width: 1200px; /* Limit the max width */
     padding: 2em;
     height:30px; 
     display: flex;
